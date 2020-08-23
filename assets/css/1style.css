@@ -49,37 +49,9 @@ body{
   z-index:99;
 }
 
-.modal2{
-  transform: scale(0.8) translate(0,-100%);
-    transition: transform .35s,opacity .35s;
-}
-
-.modal3{
-  transform:translate(0,100%) scale(.9);
-}
-
-.modal4{
-  transform:scale(0) rotate(180deg);
-}
-
 #modal-open:checked + .modal {
     opacity: 1;
     transform: scale(1);
-}
-
-#modal-open2:checked + .modal2{
-  transform:scale(1) translate(0,0);
-  opacity:1;
-}
-
-#modal-open3:checked + .modal3{
-  transform:scale(1) translate(0,0);
-  opacity:1;
-}
-
-#modal-open4:checked + .modal4{
-  transform:scale(1) rotate(0deg);
-  opacity:1;
 }
 
 .overlay {
