@@ -85,18 +85,12 @@
     margin-top: 15px;
     margin-right: 15px;
 }
-.checkList img{
-    filter:brightness(80%);
+.bot img{
+    position: inherit;
+    margin-top: -288px;
+    margin-bottom: 105px;
 }
-.checkListMid{
-    /* background: #FFFFFF; */
-    position: absolute;
-    margin-top: -130px;
-    margin-left: 100px;
-}
-.checkListMid img{
-    filter:brightness(100%);
-}
+
 .cakePrice{
     display: flex;
     justify-content: space-between;
@@ -126,9 +120,7 @@
  
  
 .modal-radio {
-    position: absolute;
     visibility: hidden;
-    opacity: 0;
 }
  
 .modal {
@@ -137,15 +129,14 @@
     width: 100%;
     top: 0;
     left: 0;
-    overflow: hidden;
-    opacity: 0;
     transform: scale(0);
-    transition: opacity .25s, transform .25s;
-  z-index:99;
+    transition: transform .30s;
+    /* overflow: hidden; */
+    /* opacity: 0.5; */
+    /* z-index:99; */
 }
  
 #idCheckoutModal:checked + .modal {
-    opacity: 1;
     transform: scale(1);
 }
  
@@ -153,25 +144,174 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    opacity: 0.3;
+    background: rgba(0, 0, 0, 0.4);
     top: 0;
     left: 0;
 }
  
 .content {
     position: absolute;
-    width: 65%;
-    height: 300px;
-    max-height: 70%;
+    width: 45%;
+    height: 70%;
+    max-height: 100%;
     top: 10%;
     left: 15%;
     background: #ffffffff;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     padding: 20px;
     color: #2f2f2f;
+    margin-left: 10%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 .titOne{
     display: flex;
     justify-content: space-between;
 }
+.titOne h2,h4{
+    margin: 0px 0px;
+}
+.cashier h5{
+    margin-top: 10px;
+    margin-bottom: 100px;
+    text-align: left;
+}
+.listCake{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+.buttonPrint{
+    margin-bottom: 0px;
+}
+.buttonPrint h2{
+    border-radius: 5px;
+    margin: 5px;
+    color: #ffffffff;
+}
+.total{
+    text-align: right;
+}
+
+.addButton{
+    cursor: pointer;
+}
+
+#idAddButton:checked + .modalAdd{
+    transform: scale(1);    
+}
+
+.radioAddModal{
+    visibility: hidden;
+}
+.modalAdd{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transition: transform .30s;
+}
+.contentAdd{
+    position: absolute;
+    width: 45%;
+    height: 70%;
+    max-height: 100%;
+    top: 10%;
+    left: 15%;
+    background: #FFFFFF;
+    padding: 20px;
+    margin-left: 10%;
+    border-radius: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    /* background: blue; */
+}
+/* input {
+    display:block;
+    width:100%;
+    margin:10px 0;
+    padding:10px;
+    box-sizing: border-box;
+  } */
+/* .contentForm input{
+    padding: 10px;
+    padding:10px;
+    border-radius:5px;
+
+} */
+
+.priceInput input[type=text] {
+    width: 55%;
+    padding: 15px 22px;
+    margin: 10px 95px;
+    border: 1px solid #CECECE;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+input[type=text] {
+    width: 70%;
+    padding: 15px 22px;
+    margin: 10px 5px;
+    border: 1px solid #CECECE;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+.category{
+    display: flex;
+    justify-content: space-between;
+}
+.category select {
+    width: 35%;
+    padding: 15px 22px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 215px;
+    border: 1px solid #CECECE;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+input[type=file] {
+    width: 70%;
+    padding: 15px 22px;
+    margin: 10px 5px;
+    border: 1px solid #CECECE;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+.rounded-input {
+    display: flex;
+    justify-content: space-between;
+  }
+.priceInput {
+    display: flex;
+    justify-content: space-between;
+  }
+.addOrCancel{
+    display: flex;
+    float: right;
+    margin-top: 50px;
+}
+.addOrCancel h3{
+    background-color: #F24F8A;
+    padding: 5px 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+    color: #FFFFFF;
+}
+/* .category{
+    background-color: #0563af;
+  color: white;
+  padding: 12px;
+  width: 250px;
+  border: none;
+  font-size: 20px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  -webkit-appearance: button;
+  appearance: button;
+  outline: none;
+} */
