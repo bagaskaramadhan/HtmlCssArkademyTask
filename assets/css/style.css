@@ -102,7 +102,17 @@
 .boxChoiceCheckOut{
     text-align: center;
     color: #FFFFFF;
-    margin: 0 30px;
+    margin-top: 65px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 0px;
+}
+.boxChoiceCheckOut1{
+    text-align: center;
+    color: #FFFFFF;
+    margin: 45px 30px;
     padding-top: 5px;
     padding-bottom: 5px;
 }
@@ -303,15 +313,19 @@ input[type=file] {
     border-radius: 10px;
     color: #FFFFFF;
 }
-/* .category{
-    background-color: #0563af;
-  color: white;
-  padding: 12px;
-  width: 250px;
-  border: none;
-  font-size: 20px;
-  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
-  -webkit-appearance: button;
-  appearance: button;
-  outline: none;
+
+/* .container-History{
+    display: grid;
+    grid-template-columns: .25fr 5fr;
+    background: greenyellow;
+    padding: 10px 25px;
+}
+.titBar-History{
+    text-align: center;
 } */
+select{
+    color:#CECECE;
+    }
+    option{
+    color:black;
+    }

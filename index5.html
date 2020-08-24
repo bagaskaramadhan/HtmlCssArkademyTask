@@ -4,264 +4,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout | 🤘🏽</title>
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>History | 🤘🏽</title>
+    <link rel="stylesheet" href="assets/css/style-History.css">
 </head>
 
 <body>
-    <div class="container">
-        <!-- pembungkus semua div-->
-
-        <div class="mainpage">
-            <!--Pembungkus sisi kiri-->
-            <div class="navHome">
-                <!-- pembungkus navbar kiri-->
-                <div class="iconHome">
-                    <img src="assets/svg/menu.svg">
-                </div>
-                <div>
-                    <h1 class="titFood ">Food Items</h1>
-                </div>
-                <div class="iconHome">
-                    <img src="assets/svg/search.svg" alt="">
-                </div>
+    <div class="container-History">
+        <div class="barTop">
+            <div class="navBar-History">
+                <img src="assets/svg/menu.svg" alt="">
             </div>
-
-            <div class="maincontent">
-                <div class="SideMenu">
-                    <img src="assets/svg/fork.svg" alt="">
-                    <img src="assets/svg/clipboard.svg" alt="">
-
-                    <!--  -->
-                    <label class="addButton" for="idAddButton">
-                        <img src="assets/svg/add.svg" alt="" style="margin-left: 19px;">
-                    </label>
-                    <input type="radio" name="modalAdd" id="idAddButton" class="radioAddModal">
-                    <!--id === for-->
-                    <!--  -->
-                    <div class="modalAdd">
-                        <label class="overlay">
-                            <input type="radio" name="modalAdd" class="radioAddModal">
-                            <!--name === name-->
-                        </label>
-                        <div class="contentAdd">
-                            <h1>Add Item</h1>
-                            <br><br>
-                            <div class="contentForm">
-                                <form action="" method="post">
-
-                                    <div class="rounded-input">
-                                        <label>
-                                            <h3>Name</h3>
-                                        </label>
-                                        <input type="text" placeholder="Food Name">
-                                    </div>
-
-                                    <div class="rounded-input">
-                                        <label>
-                                            <h3>Image</h3>
-                                        </label>
-                                        <input type="file">
-                                    </div>
-
-                                    <div class="priceInput">
-                                        <label>
-                                            <h3>Price</h3>
-                                        </label>
-                                        <input type="text" placeholder="Price">
-                                    </div>
-                                    <div class="category">
-                                        <label>
-                                            <h3>Category</h3>
-                                        </label>
-                                        <select>
-                                            <option value="0" disabled selected>Category</option>
-                                            <option value="1">Cake</option>
-                                            <option value="2">Fast Food</option>
-                                            <option value="3">Dog Food</option>
-                                            <option value="4">Fast Casual</option>
-                                        </select>
-                                    </div>
-                                    <div class="addOrCancel">
-                                        <h3 style="background-color: #F24F8A;">Cancel</h3>
-                                        &emsp;
-                                        <h3 style="background-color: #57CAD5;">Add</h3>
-                                    </div>
-                                </form>
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="imgCake">
-                    <div class="fooditems">
-                        <img src="assets/img/cake.svg" alt="">
-                        <p style="font-size: 20px;">Espresso</p>
-                        <h2>Rp. 10.000</h2>
-                    </div>
-                    <div class="fooditems">
-                        <img src="assets/img/cake2.svg" alt="">
-                        <p style="font-size: 20px;">Coffee Latte</p>
-                        <h2>Rp. 15.000</h2>
-                        <div class="bot">
-                            <img src="assets/img/Select.png" alt="">
-                        </div>
-                    </div>
-                    <div class="fooditems">
-                        <img src="assets/img/cake3.png" alt="">
-                        <p style="font-size: 20px;">Cappuccino</p>
-                        <h2>Rp. 5.000</h2>
-                    </div>
-                    <div class="fooditems">
-                        <img src="assets/img/cake4.svg" alt="">
-                        <p style="font-size: 20px;">Red Velvet</p>
-                        <h2>Rp. 33.000</h2>
-                    </div>
-                    <div class="fooditems">
-                        <img src="assets/img/cake5.svg" alt="">
-                        <p style="font-size: 20px;">Choco Rhum</p>
-                        <h2>Rp. 28.000</h2>
-                    </div>
-                    <div class="fooditems checkList">
-                        <img src="assets/img/cake6.svg" alt="">
-                        <p style="font-size: 20px;">Black Forest</p>
-                        <h2>Rp. 30.000</h2>
-                        <div class="bot">
-                            <img src="assets/img/Select.png" alt="">
-                        </div>
-                    </div>
-                    <div class="fooditems">
-                        <img src="assets/img/cake7.svg" alt="">
-                        <p style="font-size: 20px;">Chicken Katsu Dabu-dabu</p>
-                        <h2>Rp. 60.000</h2>
-                    </div>
-                    <div class="fooditems checkList">
-                        <img src="assets/img/cake8.svg" alt="">
-                        <p style="font-size: 20px;">Salmon Truffle Teriyaki</p>
-                        <h2>Rp. 60.000</h2>
-                        <div class="bot">
-                            <img src="assets/img/Select.png" alt="">
-                        </div>
-                    </div>
-                    <div class="fooditems">
-                        <img src="assets/img/cake9.svg" alt="">
-                        <p style="font-size: 20px;">Wiener Schnitzel</p>
-                        <h2>Rp. 69.000</h2>
-                    </div>
-                    <!-- <img src="assets/img/cake2.svg" alt="">
-                    <img src="assets/img/cake3.svg" alt=""> -->
-                    <!-- <img src="assets/img/cake4.svg" alt=""> -->
-                </div>
+            <div class="titBar-History">
+                <h1>History</h1>
             </div>
         </div>
-
-        <div class="main-car">
-            <!--Pembungkus sisi kanan-->
-            <div class="carHome">
-                <h1>Cart <img src="assets/svg/num-3.svg"></h1>
+        <div class="maincontentHistory">
+            <div class="sideMenu-History">
+                <img src="assets/svg/fork.svg" alt="">
+                <img src="assets/svg/clipboard.svg" alt="">
+                <img src="assets/svg/add.svg" alt="">
             </div>
-            <div>
-                <div class="listItems">
-                    <img src="assets/svg/cart-1.svg" alt="">
-                    <div class="wishlist">
-                        <h5>Coffee Latte</h5>
-                        <div class="countPrice">
-                            <img src="assets/svg/qtyBut.svg" alt="">
-                            <h5>Rp. 15.000</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="listItems">
-                    <img src="assets/svg/cart-2.svg" alt="">
-                    <div class="wishlist">
-                        <h5>Black Forest</h5>
-                        <div class="countPrice">
-                            <img src="assets/svg/qtyBut.svg" alt="">
-                            <h5>Rp. 30.000</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="listItems">
-                    <img src="assets/svg/cart-3.svg" alt="">
-                    <div class="wishlist">
-                        <h5>Salmon Truffle Teriyaki</h5>
-                        <div class="countPrice">
-                            <img src="assets/svg/qtyBut.svg" alt="">
-                            <h5>Rp. 60.000</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="mainPrice">
-                <div class="cakePrice">
-                    <h3>Total</h3>
-                    <h3>Rp. 105.000*</h3>
-                </div>
-                <div class="buyOrCancel">
-                    <p style="padding-left: 30px;">*Belum termasuk ppn</p>
-                    <div class="boxChoiceCheckOut">
-
-                        <label class="checkoutModal" for="idCheckoutModal">
-                            <h3>Checkout</h3>
-                        </label>
-                        <h3 style="background-color: #F24F8A;padding-top: 5px;padding-bottom: 5px;">Cancel</h3>
-                        <input type="radio" name="modal" id="idCheckoutModal" class="modal-radio">
-
-                        <div class="modal">
-                            <label class="overlay">
-                                <input type="radio" name="modal" class="modal-radio">
-                            </label>
-                            <div class="content">
-                                <div class="titOne">
-                                    <h2>Checkout</h2>
-                                    <h4>Receipt no: #010410919</h4>
-                                </div>
-                                <div class="cashier">
-                                    <h5>Cashier : Pevita Pearce</h5>
-                                </div>
-                                <div class="listCake">
-                                    <h4>Coffee Latte 1X</h4>
-                                    <h4>Rp. 15.000</h4>
-                                </div>
-                                <div class="listCake">
-                                    <h4>Black Forest 1X</h4>
-                                    <h4>Rp. 30.000</h4>
-                                </div>
-                                <div class="listCake">
-                                    <h4>Salmon Truffle Teriyaki</h4>
-                                    <h4>Rp. 60.000</h4>
-                                </div>
-                                <div class="listCake">
-                                    <h4>Ppn 10%</h4>
-                                    <h4>Rp. 10.500</h4>
-                                </div>
-                                <div class="total">
-                                    <h4>Total :&emsp;Rp. 115.500</h4>
-                                </div>
-                                <h4 style="text-align: left;">Payment: Cash</h4><br>
-                                <div class="buttonPrint">
-                                    <h2 style="background-color: #F24F8A;padding-top: 5px;padding-bottom: 5px;">Print
-                                    </h2>
-                                    <h4>Or</h4>
-                                    <h2 style="background-color: #57CAD5;padding-top: 5px;padding-bottom: 5px;">Send
-                                        Email</h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="mainChart">
+                <canvas id="myChart" width="400" height="400"></canvas>
             </div>
         </div>
     </div>
-    <!-- KONSTROL -->
-
-    <!-- JS -->
-    <!-- <script src="assets/js/script.js"></script>
-    <script src="assets/js/script2.js"></script>
-    <script src="assets/js/script3.js"></script> -->
+    <script>
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                datasets: [{
+                    label: '# of Votes',
+                    data: [12, 19, 3, 5, 2, 3],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
 </body>
 
 </html>
