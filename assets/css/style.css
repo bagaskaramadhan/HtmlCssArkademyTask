@@ -327,13 +327,24 @@ option{
 }
 
 @media screen and (max-width: 739px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
     .main-car{
+        position: fixed;
+        background-color: #FFFFFF;
+        height: 100vh;
+        overflow: scroll;
+        top: 0;
+        right: 0;
         display: none;
     }
     /* .hideimgSidemenu{
         display: block;
     } */
     .navHome{
+        width: 100%;
         padding-left: 0px;
         margin-left: 0px;
         padding-right: 0px;
@@ -341,12 +352,20 @@ option{
         padding: 0px;
     }
     .fooditems{
-        margin-left: -5px;
+        margin-left: 35px;
+        /* margin-left: -5px; */
         padding-left: 0px;
     }
     .hideimgSidemenu{
+        cursor: pointer;
         display: block;
     }
+    .imgCake{
+        width: 325px;
+    }
+    /* .SideMenu{
+        display: grid;
+    } */
 }
 /* @media screen and (max-width: 360px){
     .navHome{
@@ -405,3 +424,7 @@ border-radius: 30px;
 box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     }
 } */
+
+.slider{
+    display: unset;
+}
