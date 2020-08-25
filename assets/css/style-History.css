@@ -11,6 +11,14 @@
 /* .navBar-History img{
     padding-left: 10px;
 } */
+.hideimgSidemenu{
+    display: none;
+}
+@media screen and (max-width: 739px){
+    .hideimgSidemenu{
+        display: block;
+    }
+}
 .barTop{
     display: grid;
     grid-template-columns: .25fr 5fr;

@@ -180,6 +180,9 @@
 .titOne h2,h4{
     margin: 0px 0px;
 }
+.cashier{
+    margin-bottom: -45px;
+}
 .cashier h5{
     margin-top: 10px;
     margin-bottom: 100px;
@@ -313,19 +316,92 @@ input[type=file] {
     border-radius: 10px;
     color: #FFFFFF;
 }
-
-/* .container-History{
-    display: grid;
-    grid-template-columns: .25fr 5fr;
-    background: greenyellow;
-    padding: 10px 25px;
-}
-.titBar-History{
-    text-align: center;
-} */
 select{
     color:#CECECE;
-    }
-    option{
+}
+option{
     color:black;
+}
+.hideimgSidemenu{
+    display: none;
+}
+
+@media screen and (max-width: 739px){
+    .main-car{
+        display: none;
     }
+    /* .hideimgSidemenu{
+        display: block;
+    } */
+    .navHome{
+        padding-left: 0px;
+        margin-left: 0px;
+        padding-right: 0px;
+        margin-right: 0px;
+        padding: 0px;
+    }
+    .fooditems{
+        margin-left: -5px;
+        padding-left: 0px;
+    }
+    .hideimgSidemenu{
+        display: block;
+    }
+}
+/* @media screen and (max-width: 360px){
+    .navHome{
+        padding-left: 0px;
+        margin-left: 0px;
+        padding-right: 0px;
+        margin-right: 0px;
+        padding: 0px;
+    }
+    .fooditems{
+        margin-left: -5px;
+        padding-left: 0px;
+    }
+    .hideimgSidemenu{
+        display: block;
+    }
+}
+@media screen and (max-width: 500px){
+    .hideimgSidemenu{
+        display: block;
+    }
+} */
+/* @media screen and (max-width: 375px){
+    .navHome{
+        padding-left: 0px;
+        margin-left: 0px;
+        padding-right: 0px;
+        margin-right: 0px;
+        padding: 0px;
+    }
+    .fooditems{
+        margin-left: -5px;
+        padding-left: 0px;
+    }
+    .hideimgSidemenu{
+        display: block;
+    }
+    
+} */
+
+/* @media screen and (max-width: 740px){
+    .contentForm{
+        margin-top: -30px;
+    }
+    .contentAdd{
+        position: absolute;
+width: 89%;
+height: 86%;
+max-height: 100%;
+top: 5px;
+left: -7%;
+background: #FFFFFF;
+padding: 20px;
+margin-left: 10%;
+border-radius: 30px;
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    }
+} */
