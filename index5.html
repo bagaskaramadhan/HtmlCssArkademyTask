@@ -20,14 +20,34 @@
         </div>
         <div class="maincontentHistory">
             <div class="sideMenu-History">
-                <img src="assets/img/cartcake.png" alt="" class="hideimgSidemenu" style="width: 55px;">
+                <!-- <img src="assets/img/cartcake.png" alt="" class="hideimgSidemenu" style="width: 55px;"> -->
                 <img src="assets/svg/fork.svg" alt="">
                 <img src="assets/svg/clipboard.svg" alt="">
                 <img src="assets/svg/add.svg" alt="">
             </div>
             <div class="mainChart">
                 <div class="boxData">
-                    <h1>N[o]NE</h1>
+                    <div class="perBox" style="background: linear-gradient(278.29deg, #FBB2B4 30.05%, rgba(255, 143, 178, 0) 133.19%);
+                    filter: drop-shadow(10px 15px 10px rgba(255, 143, 178, 0.25));">
+                        <h5>Today's Income</h5>
+                        <h1>Rp. 1.000.000</h1>
+                        <h5>+2% Yesterday</h5>
+                        <img src="assets/svg/clink.svg" alt="">
+                    </div>
+                    <div class="perBox" style="background: linear-gradient(278.29deg, #29DFFF 30.05%, rgba(41, 223, 255, 0) 133.19%);
+                    filter: drop-shadow(10px 15px 10px rgba(41, 223, 255, 0.25));">
+                        <h5>Orders</h5>
+                        <h1>3.270</h1>
+                        <h5>+5% Last Week</h5>
+                        <img src="assets/svg/clink2.svg" alt="">
+                    </div>
+                    <div class="perBox" style="background: linear-gradient(278.29deg, #AB84C8 30.05%, rgba(241, 201, 236, 0) 133.19%);
+                    filter: drop-shadow(10px 15px 10px rgba(241, 201, 236, 0.25));">
+                        <h5>This Year's Income</h5>
+                        <h1>Rp. 100.000.000.000</h1>
+                        <h5>+10% Last Year</h5>
+                        <img src="assets/svg/clinkP.svg" alt="">
+                    </div>
                 </div>
                 <canvas id="myChart" width="400" height="100"></canvas>
             </div>
@@ -39,12 +59,13 @@
         var myChart = new Chart(ctx, {
             type: 'line',
             data: {
-                labels: ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''],
+                labels: ['', '', '', '', '', '', '', '', '', ''],
                 datasets: [{
+                    title: 'OK',
                     label: 'This Month',
                     tension: 0,
                     fill: false,
-                    data: [0, 20, 11, 28, 22, 39, 11, 48, 40, 32, 36, 23, 38, 33, 39, 31, 23, 39, 31],
+                    data: [0, 20, 11, 28, 22, 39, 11, 48, 40, 20],
                     backgroundColor: [
                         // 'rgba(0,241,255,0.5)',
                     ],
@@ -64,21 +85,29 @@
                     borderColor: [
                         'rgba(255,184,198, 0.8)',
                     ],
-                    borderWidth: 5
+                    borderWidth: 5,
                 },
                 ]
             },
             options: {
+                title: {
+                    display: true,
+                    text: 'Revenue',
+                    fontSize: 30,
+
+                },
                 legend: {
                     labels: {
                         usePointStyle: true
                     },
-                    position: 'bottom'
+                    position: 'bottom',
                 },
                 scales: {
                     yAxes: [{
                         ticks: {
-                            beginAtZero: true
+                            // display:false,
+                            beginAtZero: true,
+                            stepSize: 10,
                         }
                     }]
                 }

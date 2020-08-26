@@ -63,3 +63,45 @@
     margin-right: -20px;
     padding: 30px;
 }
+.boxData{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+
+}
+.perBox{
+    width: 361.367px;
+    border-radius: 10px;
+}
+.perBox h1,h5{
+    padding-left: 40px;
+}
+.perBox img{
+    position: absolute;
+    margin-top: -165px;
+    margin-left: 202px;
+    width: 155px;
+}
+#myChart{
+    background: #FFFFFF;
+
+}
+@media screen and (max-width: 500px){
+    .boxData{
+        width: 300px;
+    }
+    .perBox{
+        width: 96.367px
+    }
+    .perBox h1,h5{
+        font-size: 10px;
+        padding-left: 5px;
+    }
+    .perBox img{
+        display: none;
+    }
+    /* #myChart{
+height: 124px;
+width: 300px;
+    } */
+}
