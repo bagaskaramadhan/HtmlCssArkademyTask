@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History | 🤘🏽</title>
+    <link rel="stylesheet" href="assets/css/style-History.css">
+</head>
+
+<body>
+    <div class="container-History">
+        <div class="barTop">
+            <div class="navBar-History">
+                <img src="assets/svg/menu.svg" alt="">
+            </div>
+            <div class="titBar-History">
+                <h1>History</h1>
+            </div>
+        </div>
+        <div class="maincontentHistory">
+            <div class="sideMenu-History">
+                <!-- <img src="assets/img/cartcake.png" alt="" class="hideimgSidemenu" style="width: 55px;"> -->
+                <a href="menu.html">
+                    <img src="assets/svg/fork.svg" style="margin-left: 20px;">
+                </a>
+                <img src="assets/svg/clipboard.svg" alt="">
+                <img src="assets/svg/add.svg" alt="">
+            </div>
+            <div class="mainChart">
+                <div class="boxData">
+                    <div class="perBox" style="background: linear-gradient(278.29deg, #FBB2B4 30.05%, rgba(255, 143, 178, 0) 133.19%);
+                    filter: drop-shadow(10px 15px 10px rgba(255, 143, 178, 0.25));">
+                        <h5>Today's Income</h5>
+                        <h1>Rp. 1.000.000</h1>
+                        <h5>+2% Yesterday</h5>
+                        <img src="assets/svg/clink.svg" alt="">
+                    </div>
+                    <div class="perBox" style="background: linear-gradient(278.29deg, #29DFFF 30.05%, rgba(41, 223, 255, 0) 133.19%);
+                    filter: drop-shadow(10px 15px 10px rgba(41, 223, 255, 0.25));">
+                        <h5>Orders</h5>
+                        <h1>3.270</h1>
+                        <h5>+5% Last Week</h5>
+                        <img src="assets/svg/clink2.svg" alt="">
+                    </div>
+                    <div class="perBox" style="background: linear-gradient(278.29deg, #AB84C8 30.05%, rgba(241, 201, 236, 0) 133.19%);
+                    filter: drop-shadow(10px 15px 10px rgba(241, 201, 236, 0.25));">
+                        <h5>This Year's Income</h5>
+                        <h1>Rp. 100.000.000.000</h1>
+                        <h5>+10% Last Year</h5>
+                        <img src="assets/svg/clinkP.svg" alt="">
+                    </div>
+                </div>
+
+                <canvas id="myChart" width="400" height="100"></canvas>
+                <div class="recent">
+                    <div class="titleRec">
+                        <h1>Recent Order</h1>
+                        <div class="titTh">
+                            <h5>INVOICES</h5>
+                            <h5>CASHIER</h5>
+                            <h5>DATE</h5>
+                            <h5>ORDERS</h5>
+                            <h5>AMOUNT</h5>
+                        </div>
+                        <hr>
+                        <div class="titTd">
+                            <p style="margin-left: 41px;">#10928</p>
+                            <p style="margin-left: 51px;">Cashier 1</p>
+                            <p style="margin-left: 3px;">06 October 2019</p>
+                            <p style="margin-right: 25px;">Ice Tea</p>
+                            <p style="margin-left: 0px;">Rp. 120.000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script>
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['', '', '', '', '', '', '', '', '', ''],
+                datasets: [{
+                    title: 'OK',
+                    label: 'This Month',
+                    tension: 0,
+                    fill: false,
+                    data: [0, 20, 11, 28, 22, 39, 11, 48, 40, 20],
+                    backgroundColor: [
+                        // 'rgba(0,241,255,0.5)',
+                    ],
+                    borderColor: [
+                        'rgba(0,241,255,0.5)',
+                    ],
+                    borderWidth: 5
+                },
+                {
+                    label: 'Last Month',
+                    fill: false,
+                    tension: 0,
+                    data: [10, 28, 3, 38, 22, 38, 11, 28, 22, 48, 12, 27, 12, 40],
+                    backgroundColor: [
+                        // 'rgba(255,184,198, 0.8)',
+                    ],
+                    borderColor: [
+                        'rgba(255,184,198, 0.8)',
+                    ],
+                    borderWidth: 5,
+                },
+                ]
+            },
+            options: {
+                title: {
+                    display: true,
+                    text: 'Revenue',
+                    fontSize: 30,
+                    fontColor: '#000000',
+                    // fontFamily: 'airbnb'
+                },
+                legend: {
+                    labels: {
+                        usePointStyle: true
+                    },
+                    position: 'bottom',
+                },
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            // display:false,
+                            beginAtZero: true,
+                            stepSize: 10,
+                        }
+                    }]
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
