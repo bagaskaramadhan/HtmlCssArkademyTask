@@ -111,7 +111,7 @@
 
 @media screen and (max-width: 500px){
     .boxData{
-        width: 300px;
+        width: 290px;
     }
     .perBox{
         width: 96.367px
@@ -122,6 +122,14 @@
     }
     .perBox img{
         display: none;
+    }
+    #myChart{
+        display: block;
+width: 283px;
+height: 90px;
+    }
+    .titleRec{
+        width: 284.467px;
     }
     /* #myChart{
 height: 124px;
